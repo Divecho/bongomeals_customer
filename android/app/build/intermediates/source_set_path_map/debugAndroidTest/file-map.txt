@@ -1,0 +1,5 @@
+com.bongomeals.food.test.app-androidTest-0 C:\Users\dell\Desktop\ReactProjects\food\foodlakh_customer\android\app\build\generated\res\resValues\androidTest\debug
+com.bongomeals.food.test.app-androidTest-1 C:\Users\dell\Desktop\ReactProjects\food\foodlakh_customer\android\app\build\generated\res\rs\androidTest\debug
+com.bongomeals.food.test.app-mergeDebugAndroidTestResources-2 C:\Users\dell\Desktop\ReactProjects\food\foodlakh_customer\android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.bongomeals.food.test.app-mergeDebugAndroidTestResources-3 C:\Users\dell\Desktop\ReactProjects\food\foodlakh_customer\android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.bongomeals.food.test.app-merged_res-4 C:\Users\dell\Desktop\ReactProjects\food\foodlakh_customer\android\app\build\intermediates\merged_res\debugAndroidTest

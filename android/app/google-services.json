@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "470706299814",
+    "firebase_url": "https://bongofood-dfce7-default-rtdb.firebaseio.com",
+    "project_id": "bongofood-dfce7",
+    "storage_bucket": "bongofood-dfce7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470706299814:android:33588c8bc91c204d286567",
+        "android_client_info": {
+          "package_name": "com.bongomeals.food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470706299814-1u7m1gk2tpvhml2ib1s3jjbunsmgpmal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhA4Iq7b7TIVzjhmgXfi-_AHviuYl736Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470706299814-1u7m1gk2tpvhml2ib1s3jjbunsmgpmal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
