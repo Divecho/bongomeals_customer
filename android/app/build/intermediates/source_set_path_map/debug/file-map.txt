@@ -6,10 +6,10 @@ com.bongomeals.food.app-jetified-flipper-0.125.0-4 C:\Users\dell\.gradle\caches\
 com.bongomeals.food.app-jetified-lottie-5.1.1-5 C:\Users\dell\.gradle\caches\transforms-3\2a3354298e522f38f3b38efd5e0a457c\transformed\jetified-lottie-5.1.1\res
 com.bongomeals.food.app-jetified-drawee-2.6.0-6 C:\Users\dell\.gradle\caches\transforms-3\2df6f362e4a8837e80f9d5fcfd3d6a46\transformed\jetified-drawee-2.6.0\res
 com.bongomeals.food.app-jetified-startup-runtime-1.0.0-7 C:\Users\dell\.gradle\caches\transforms-3\3508731feb86ec389c071475b63d56cb\transformed\jetified-startup-runtime-1.0.0\res
-com.bongomeals.food.app-jetified-lifecycle-process-2.4.0-8 C:\Users\dell\.gradle\caches\transforms-3\42fbb4ec3f226f2a6385070df69142f6\transformed\jetified-lifecycle-process-2.4.0\res
-com.bongomeals.food.app-material-1.1.0-9 C:\Users\dell\.gradle\caches\transforms-3\49e0ad7083a9ec6ce7e824bb419d672b\transformed\material-1.1.0\res
-com.bongomeals.food.app-jetified-play-services-maps-18.0.2-10 C:\Users\dell\.gradle\caches\transforms-3\4ce1a811539468a6aefb5e2869c33714\transformed\jetified-play-services-maps-18.0.2\res
-com.bongomeals.food.app-jetified-checkout-1.6.35-11 C:\Users\dell\.gradle\caches\transforms-3\53a78fcf7b0f920e5af23c6072981fc3\transformed\jetified-checkout-1.6.35\res
+com.bongomeals.food.app-jetified-checkout-1.6.36-8 C:\Users\dell\.gradle\caches\transforms-3\3d5d75082926577e80c51a1d52a8f42f\transformed\jetified-checkout-1.6.36\res
+com.bongomeals.food.app-jetified-lifecycle-process-2.4.0-9 C:\Users\dell\.gradle\caches\transforms-3\42fbb4ec3f226f2a6385070df69142f6\transformed\jetified-lifecycle-process-2.4.0\res
+com.bongomeals.food.app-material-1.1.0-10 C:\Users\dell\.gradle\caches\transforms-3\49e0ad7083a9ec6ce7e824bb419d672b\transformed\material-1.1.0\res
+com.bongomeals.food.app-jetified-play-services-maps-18.0.2-11 C:\Users\dell\.gradle\caches\transforms-3\4ce1a811539468a6aefb5e2869c33714\transformed\jetified-play-services-maps-18.0.2\res
 com.bongomeals.food.app-jetified-emoji2-1.0.0-12 C:\Users\dell\.gradle\caches\transforms-3\56f038526f903ccf6e98f4a2d24b95f6\transformed\jetified-emoji2-1.0.0\res
 com.bongomeals.food.app-jetified-appcompat-resources-1.4.1-13 C:\Users\dell\.gradle\caches\transforms-3\572a4c1434137a4bd183156545f7ebbe\transformed\jetified-appcompat-resources-1.4.1\res
 com.bongomeals.food.app-lifecycle-viewmodel-2.3.1-14 C:\Users\dell\.gradle\caches\transforms-3\59930861e44bfd61bf12d3c239f8c223\transformed\lifecycle-viewmodel-2.3.1\res

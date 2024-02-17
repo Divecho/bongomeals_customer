@@ -92,7 +92,7 @@ const Menu = (props) => {
     console.log({restaurant_id:restaurant_id, food_type:food_type, customer_id:global.id, lat:props.current_lat, lng:props.current_lng})
     setLoading(true);
     await axios({
-      method: 'post', 
+      method: 'post',  
       url: api_url + restaurant_menu,
       data:{restaurant_id:restaurant_id, food_type:food_type, customer_id:global.id, lat:props.current_lat, lng:props.current_lng}
     })
@@ -159,17 +159,21 @@ const Menu = (props) => {
     });
   }
 
-  const add_to_cart = async (qty,item_id,item_name,price) => {
+  const add_to_cart = async (qty,item_id,item_name,price, discountPrice) => {
     if(check_vendor()){
+      let itemPrice = price;
+      if(discountPrice && discountPrice != null){
+        itemPrice = discountPrice;
+      }
       let cart_items = await props.cart_items;
       let old_item_details = await cart_items[item_id];
       let sub_total = await parseFloat(props.sub_total);
-      let total_price = await parseFloat(qty * price);
+      let total_price = await parseFloat(qty * itemPrice);
       if(old_item_details != undefined && total_price > 0){
         let final_price = await parseFloat(total_price) - parseFloat(old_item_details.total);
         sub_total = await parseFloat(sub_total) + parseFloat(final_price);
       }else if(total_price > 0){
-        let final_price = await parseFloat(qty * price);
+        let final_price = await parseFloat(qty * itemPrice);
         sub_total = await parseFloat(sub_total) + parseFloat(final_price);
       }
       if(qty > 0){
@@ -177,8 +181,8 @@ const Menu = (props) => {
           item_id: item_id,
           item_name: item_name,
           quantity: qty,
-          price_per_item: parseFloat(price),
-          total:parseFloat(qty * price)
+          price_per_item: parseFloat(itemPrice),
+          total:parseFloat(qty * itemPrice)
         }
         cart_items[item_id] = await item;
         await props.addToCart(cart_items);
@@ -186,7 +190,7 @@ const Menu = (props) => {
         await props.updateRestaurantId(restaurant_id);
        }else{
           delete cart_items[item_id];
-          sub_total = parseFloat(sub_total) - parseFloat(price);
+          sub_total = parseFloat(sub_total) - parseFloat(itemPrice);
           await props.addToCart(cart_items);
           await props.updateSubtotal(sub_total);
        }   
@@ -222,6 +226,7 @@ const getEta = async(max_time,dis,lat,lng) => {
         var eta = await parseInt(max_time) + parseInt(time);
         await setEta(eta);
        }
+       
    } catch(error) {
       alert('Sorry something went wrong Menus 2')
       console.log(error);
@@ -240,7 +245,14 @@ const renderItem = ({ item }) => (
       <View style={{ margin:2}}/>
       <Text style={{ fontFamily:bold, fontSize:14, color:colors.theme_fg_two,letterSpacing:1}}>{item.item_name}</Text>
       <View style={{ margin:3}}/>
-      <Text style={{ fontFamily:regular, fontSize:12, color:colors.theme_fg_two}}>{global.currency}{item.base_price}</Text>
+      <View style={styles.PriceContainer}>
+      <Text style={item.discount_price ? styles.isDiscountPrice : styles.price}>{global.currency}{item.base_price}</Text>
+      {
+        item.discount_price &&(
+          <Text style={[styles.price, { marginLeft: 10}]}>{global.currency}{item.discount_price}</Text>
+        )
+      }
+      </View>
       <View style={{ margin:3}}/>
       <Text numberOfLines={3} style={{ fontFamily:regular, fontSize:10, color:colors.grey,letterSpacing:1}}>{item.item_description}</Text>
       {/*<View style={{ padding:10}}>
@@ -269,7 +281,7 @@ const renderItem = ({ item }) => (
       {item.in_stock != 0 ?
       <View>
         <UIStepper
-          onValueChange={(value) => { add_to_cart(value,item.id,item.item_name,item.base_price) }}
+          onValueChange={(value) => { add_to_cart(value,item.id,item.item_name,item.base_price, item.discount_price) }}
           displayValue={view_value}
           initialValue={props.cart_items[item.id] ? props.cart_items[item.id].quantity : 0 }
           value={props.cart_items[item.id] ? props.cart_items[item.id].quantity : 0 }
@@ -503,6 +515,26 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     height:45
   },
+  price:{
+    fontFamily:regular, 
+    fontSize:12, 
+    color:colors.theme_fg_two
+  },
+  isDiscountPrice:{
+    fontFamily:regular, 
+    fontSize:12, 
+    color:colors.theme_fg_two,
+    textDecorationLine:'line-through',
+  },
+  PriceContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between', // Adjust as needed
+    alignItems: 'center', // Align vertically as needed
+  },
+  marginRight: {
+    marginRight: 10,
+  }
+
 });
 
 function mapStateToProps(state){

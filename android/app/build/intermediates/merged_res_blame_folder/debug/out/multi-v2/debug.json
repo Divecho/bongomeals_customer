@@ -2207,23 +2207,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\53a78fcf7b0f920e5af23c6072981fc3\\transformed\\jetified-checkout-1.6.35\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "38",
-                        "endOffsets": "89"
-                    },
-                    "to": {
-                        "startLines": "92",
-                        "startColumns": "4",
-                        "startOffsets": "5311",
-                        "endColumns": "38",
-                        "endOffsets": "5345"
-                    }
-                },
-                {
                     "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\a574946c20b2151cd75289586fd58bc6\\transformed\\jetified-firebase-messaging-23.1.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -2374,9 +2357,9 @@
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "57",
+                        "startOffsets": "55",
                         "endColumns": "56",
-                        "endOffsets": "109"
+                        "endOffsets": "107"
                     },
                     "to": {
                         "startLines": "175",
@@ -2515,6 +2498,23 @@
                         "endLines": "8,116,117,118,119,314,315,316,913,2735,2738,2741,5423",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "515,7150,7212,7274,7338,20555,20612,20666,67279,183629,183755,183883,332545"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\3d5d75082926577e80c51a1d52a8f42f\\transformed\\jetified-checkout-1.6.36\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "38",
+                        "endOffsets": "89"
+                    },
+                    "to": {
+                        "startLines": "92",
+                        "startColumns": "4",
+                        "startOffsets": "5311",
+                        "endColumns": "38",
+                        "endOffsets": "5345"
                     }
                 },
                 {
@@ -6289,6 +6289,25 @@
             "outputFile": "com.bongomeals.food.app-merged_res-42:/values-sw600dp-v13_values-sw600dp-v13.arsc.flat",
             "map": [
                 {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\3d5d75082926577e80c51a1d52a8f42f\\transformed\\jetified-checkout-1.6.36\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,93",
+                        "endLines": "2,13",
+                        "endColumns": "37,12",
+                        "endOffsets": "88,745"
+                    },
+                    "to": {
+                        "startLines": "2,23",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,1389",
+                        "endLines": "2,33",
+                        "endColumns": "37,12",
+                        "endOffsets": "88,2041"
+                    }
+                },
+                {
                     "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\49e0ad7083a9ec6ce7e824bb419d672b\\transformed\\material-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
@@ -6322,25 +6341,6 @@
                         "startOffsets": "93,162,231,301,375,451,510,581",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "157,226,296,370,446,505,576,644"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\53a78fcf7b0f920e5af23c6072981fc3\\transformed\\jetified-checkout-1.6.35\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,93",
-                        "endLines": "2,13",
-                        "endColumns": "37,12",
-                        "endOffsets": "88,745"
-                    },
-                    "to": {
-                        "startLines": "2,23",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,1389",
-                        "endLines": "2,33",
-                        "endColumns": "37,12",
-                        "endOffsets": "88,2041"
                     }
                 }
             ]
